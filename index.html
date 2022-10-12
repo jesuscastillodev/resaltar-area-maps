@@ -1,0 +1,21 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<link rel="stylesheet" href="style.css">
+<div class="container_zonas">
+    <div id="comunas">
+        <div class="list-zones">
+            <ul id="list-zones__list" class="list-zones__list">
+            </ul>
+        </div>
+    </div>
+    <div id="container_map">
+        <div id="map"></div>
+    </div>
+</div>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJfigiuW-6OBXiHbl_wxJFWsmWfhb07uA&callback=initMap&v=weekly"
+    defer></script>
+
+<script src="maps.js"></script>
+<script>
+    window.initMap = initMap;
+</script>
